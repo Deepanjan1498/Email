@@ -5,12 +5,12 @@ import java.util.regex.Pattern;
 public class Email {
 	public static void main(String args[]) {
 		List<String> email = new ArrayList<String>();
-		email.add("abc@bridgelabz.com");
-	    email.add("abc@gmail.co.in");
+		email.add("@bridgelabz.com");
+	    email.add("abc+xyz@gmail.co.in");
 		
 
 		
-		String regex = "^abc@([a-z0-9-]+)\\.([a-z]{2,3})$";
+		String regex = "^([a-z0-9-_\\+]+)(\\.[a-z0-9]+)?@([a-z0-9-]+)\\.([a-z]{2,3})$";
 
 		Pattern pattern = Pattern.compile(regex);
 
