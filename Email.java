@@ -6,6 +6,7 @@ public class Email {
 	public static void main(String args[]) {
 		List<String> email = new ArrayList<String>();
 		email.add("abc@bridgelabz.com");
+	    email.add("abc@gmail.co.in");
 		
 
 		
