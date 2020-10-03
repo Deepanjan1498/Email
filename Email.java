@@ -7,10 +7,11 @@ public class Email {
 		List<String> email = new ArrayList<String>();
 		email.add("@bridgelabz.com");
 	    email.add("abc+xyz@gmail.co.in");
+	    email.add("ab.xy@gmail.co.in");
 		
 
 		
-		String regex = "^([a-z0-9-_\\+]+)(\\.[a-z0-9]+)?@([a-z0-9-]+)\\.([a-z]{2,3})$";
+		String regex = "^([a-z0-9-_\\+]+)(\\.[a-z0-9]+)?@([a-z0-9-]+)\\.([a-z]{2,3})(\\.[a-z]{2})?$";
 
 		Pattern pattern = Pattern.compile(regex);
 
